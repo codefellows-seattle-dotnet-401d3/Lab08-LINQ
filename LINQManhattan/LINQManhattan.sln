@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQManhattan", "LINQManhattan\LINQManhattan.csproj", "{B831592D-ECE2-4386-9D18-A00347F2915B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B831592D-ECE2-4386-9D18-A00347F2915B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B831592D-ECE2-4386-9D18-A00347F2915B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B831592D-ECE2-4386-9D18-A00347F2915B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B831592D-ECE2-4386-9D18-A00347F2915B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3833839B-112A-406C-9CDD-41E63747E23A}
+	EndGlobalSection
+EndGlobal
