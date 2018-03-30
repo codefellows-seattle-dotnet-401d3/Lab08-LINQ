@@ -7,14 +7,16 @@ A small app intended to explore how to work with JSON and LINQ
 This is a small test app using visual studio 2017. 
 You will also need xunit testing. 
 You will need to install and run VS2017 in order to run and use the app.
+You will also need Newtonsoft Json.NET
 
 ## Features
 
-The app will Output all the neighborhoods then Filter out all the neighborhoods that do not have any names finaly remove duplicates. Then It woill show all the filters written into one. 
+The app will Output all the neighborhoods found in the JSON then Filter out all the neighborhoods that do not have any names finaly remove duplicates. Then It woill show all the filters written into one. 
 
 ## Resources and Links
 
 https://jsoneditoronline.org/
+https://vslapp.files.wordpress.com/2011/11/linq-cheatsheet.pdf
 
 I worked with:
 Amanda Iverson
