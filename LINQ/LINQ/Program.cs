@@ -33,6 +33,9 @@ namespace LINQ
                 Console.ReadLine();
             }
 
+            /* LINQ queries
+             * 
+             */
             //outputs all data with neighborhood with no names
             IEnumerable<string> neighborhood = from Feature in jObject.features
                                                where Feature.properties.neighborhood != null
@@ -45,10 +48,14 @@ namespace LINQ
             Console.ReadLine();
 
 
-            
+
+
+
+
             IEnumerable<string> fullFilter = from item in jObject.features
                                              where item.properties.neighborhood != null
                                              select item.properties.neighborhood;
+
             foreach (string item in fullFilter)
             {
                 Console.WriteLine(item);
@@ -61,17 +68,9 @@ namespace LINQ
                 Console.WriteLine(item);
             }
 
+         
 
-
-            /*
-            var allHoods = from n in Type.
-                           where n.properties.neighborhood != null
-                           select n;
-            foreach (var hood in allHoods)
-            {
-                Console.WriteLine(hood.properties.neighborhood);
-            }*/
-
+        
 
         }
 
