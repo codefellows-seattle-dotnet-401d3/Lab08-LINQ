@@ -26,6 +26,55 @@ namespace LINQ
 
             var jObject = JsonConvert.DeserializeObject<JSONTransferObject>(sr.ReadLine());
 
-        }    
+            //ouputs all data of the neighborhood
+            foreach (var item in jObject.features)
+            {
+                Console.WriteLine(item.properties.neighborhood);
+                Console.ReadLine();
+            }
+
+            /* LINQ queries
+             * 
+             */
+            //outputs all data with neighborhood with no names
+            IEnumerable<string> neighborhood = from Feature in jObject.features
+                                               where Feature.properties.neighborhood != null
+                                               select Feature.properties.neighborhood;
+            foreach (string item in neighborhood)
+            {
+                Console.WriteLine("Neighborhoods with no empty data");
+                Console.WriteLine(item);
+            }
+            Console.ReadLine();
+
+
+
+
+
+
+            IEnumerable<string> fullFilter = from item in jObject.features
+                                             where item.properties.neighborhood != null
+                                             select item.properties.neighborhood;
+
+            foreach (string item in fullFilter)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Lambda expression
+            IEnumerable<Feature> features = jObject.features.Where(item => item.properties.neighborhood != null).Distinct();
+            foreach (string item in fullFilter)
+            {
+                Console.WriteLine(item);
+            }
+
+         
+
+        
+
+        }
+
+
     }
 }
+
