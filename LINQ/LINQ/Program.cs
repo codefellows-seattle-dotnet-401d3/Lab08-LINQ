@@ -31,7 +31,17 @@ namespace LINQ
                 Console.WriteLine(item.properties.neighborhood);
                 Console.ReadLine();
             }
-         
+
+            /*
+            var allHoods = from n in Type.
+                           where n.properties.neighborhood != null
+                           select n;
+            foreach (var hood in allHoods)
+            {
+                Console.WriteLine(hood.properties.neighborhood);
+            }*/
+
+
         }
 
 
