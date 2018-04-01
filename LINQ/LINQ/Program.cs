@@ -26,6 +26,15 @@ namespace LINQ
 
             var jObject = JsonConvert.DeserializeObject<JSONTransferObject>(sr.ReadLine());
 
-        }    
+            foreach (var item in jObject.features)
+            {
+                Console.WriteLine(item.properties.neighborhood);
+                Console.ReadLine();
+            }
+         
+        }
+
+
     }
 }
+
