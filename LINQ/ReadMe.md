@@ -21,7 +21,7 @@ we had learned prevously and parsing thru this file, then displaying neighboorho
 
 ## Example
 
-![alt text](http://url/to/img.png)
+![alt text](/LINQ/LINQ.JPG)
 
 
 
