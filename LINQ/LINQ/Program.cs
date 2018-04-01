@@ -47,11 +47,6 @@ namespace LINQ
             }
             Console.ReadLine();
 
-
-
-
-
-
             IEnumerable<string> fullFilter = from item in jObject.features
                                              where item.properties.neighborhood != null
                                              select item.properties.neighborhood;
@@ -67,10 +62,6 @@ namespace LINQ
             {
                 Console.WriteLine(item);
             }
-
-         
-
-        
 
         }
 
