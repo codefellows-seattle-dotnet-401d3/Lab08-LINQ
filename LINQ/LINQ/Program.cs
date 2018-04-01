@@ -1,40 +1,36 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
+/*
+ * using NewtonSoft to turn JSON data into Generics collection
+ * then use LINQ expression to parse thru data to search for 
+ */
 namespace LINQ
 {
     class Program
     {
         static void Main(string[] args)
         {
+            /* Creating a string this is the start 
+             */
+            string manhattan;
+            using (StreamReader r = new StreamReader("data.json"))
+            {
+                manhattan = r.ReadToEnd();
+            };
+
+            Console.WriteLine(manhattan);
 
 
-            Console.WriteLine("Hello World!");
-
-            string mypath = "..//data.json";
-            Fil
+    
            
       
         }
 
-        public static void ReadFile(string mypath)
-        {
-            try
-            {
-                using (StreamReader sr = File.OpenText(mypath))
-                {
-                    string s = " ";
-                    while ((s = sr.ReadLine() != null))
-                    {
-                        Console.WriteLine()
-                    }
-                }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
+       
        
 
 
