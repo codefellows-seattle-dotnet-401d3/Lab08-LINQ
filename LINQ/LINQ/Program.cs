@@ -21,6 +21,9 @@ namespace LINQ
             {
                 manhattan = r.ReadToEnd();
             };
+            FeaturesCollection items = 
+                JsonConvert.DeserializeObject<FeaturesCollection>(manhattan);
+            Console.WriteLine();
 
             Console.WriteLine(manhattan);
 
